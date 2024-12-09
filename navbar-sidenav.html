@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Matrial Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ed45717f26.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #navbar {
+      background: linear-gradient(to right, rgb(255, 0, 187), rgb(255, 0, 0));}
+    #navbar-1 {
+        background: linear-gradient(to bottom, rgb(255, 166, 233), rgb(162, 0, 255));}
+    #navbar-2 {
+        background: linear-gradient(to top, rgb(0, 0, 0), rgb(214, 211, 211));}
+  </style>
+
+    <title>Navbar & Sidenav</title>
+</head>
+<body>
+        <!-- Fixed Navbar -->
+      <div class="navbar-fixed">
+        <nav class="pink">
+          <div class="container">
+        <!-- Dropdown Structure -->
+              <ul id="dropdown1" class="dropdown-content">
+                <li><a href="">About</a></li>
+                <li><a href="">Mission</a></li>
+                <li class="divider"></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+          </div>
+          <div class="nav-wrapper">
+              <a href="https://fontawesome.com/" class="brand-logo" target="_blank">
+                <i class="fa-brands fa-intercom"></i>
+              </a>
+              <a href="" data-target="mobile-demo" class="sidenav-trigger"><i class="fa-solid fa-bars"></i></a>
+              
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="https://fontawesome.com/kits" target="_blank">Kits</a></li>
+                <li><a href="https://fontawesome.com/icons" target="_blank">Icons</a></li>
+                <li><a href="https://docs.fontawesome.com/" target="_blank">Docs</a></li>
+                <li><a href="https://fontawesome.com/plans" target="_blank">Plans</a></li>
+                <li><a href="https://fontawesome.com/support" target="_blank">Support</a></li>
+                <li><a href="https://www.podcastawesome.com/" target="_blank">Podcast</a></li>
+
+                <li><a class="dropdown-trigger" href="" data-target="dropdown1"><i class="fa-solid fa-sort-down"></class=></i></a></li>
+              </ul>
+          </div>
+        </nav>
+      </div>
+      
+        <!-- Navbar -->
+    <h1 class="pink-text text-lightened 2 center">Navbar</h1>
+    <div class="divider"></div>
+    <br>
+    <div class="container">
+        <p>The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.</p>
+
+        <!-- Right Aligned Links -->
+        <h3 class="pink-text text-lightened 2 ">Right Aligned Links</h3>
+        <p>To right align your navbar links, just add a right class to your < ul > that contains them.</p>
+        
+        <nav id="navbar">
+          <div class="container">
+              <div class="nav-wrapper">
+                  <i class="fa-solid fa-font-awesome"></i>
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a href="https://fontawesome.com/kits" target="_blank">Kits</a></li>
+                  <li><a href="https://fontawesome.com/icons" target="_blank">Icons</a></li>
+                  <li><a href="https://docs.fontawesome.com/" target="_blank">Docs</a></li>
+                  <li><a href="https://fontawesome.com/plans" target="_blank">Plans</a></li>
+                  <li><a href="https://fontawesome.com/support" target="_blank">Support</a></li>
+                  <li><a href="https://www.podcastawesome.com/" target="_blank">Podcast</a></li>
+                  <li><a href=""></a></li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <br>
+        <!-- Left Aligned Links -->
+        <h3 class="pink-text text-lightened 2 ">Left Aligned Links</h3>
+        <p>To left align your navbar links, just add a left class to your < ul > that contains them.</p>
+        <nav id="navbar-1">
+          <div class="container">
+            <div class="nav-wrapper">
+                <i class="fa-brands fa-github right"></i>
+              </a>
+              <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="https://fontawesome.com/kits" target="_blank">Kits</a></li>
+                <li><a href="https://fontawesome.com/icons" target="_blank">Icons</a></li>
+                <li><a href="https://docs.fontawesome.com/" target="_blank">Docs</a></li>
+                <li><a href="https://fontawesome.com/plans" target="_blank">Plans</a></li>
+                <li><a href="https://fontawesome.com/support" target="_blank">Support</a></li>
+                <li><a href="https://www.podcastawesome.com/" target="_blank">Podcast</a></li>
+                
+              </ul>
+            </div>
+          </div>
+      </nav>
+        <br>
+        <!-- Centering the logo -->
+        <h3 class="pink-text text-lightened 2 ">Centering the logo</h3>
+        <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the center class to your < a class="brand-logo" >. You will have to make sure yourself that links do not overlap if you use this.</p>
+        <nav id="navbar-2">
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo center"><i class="fa-brands fa-product-hunt"></i></a>
+              </a>
+              <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="https://fontawesome.com/kits" target="_blank">Kits</a></li>
+                <li><a href="https://fontawesome.com/icons" target="_blank">Icons</a></li>
+                <li><a href="https://docs.fontawesome.com/" target="_blank">Docs</a></li>
+                <li><a href="https://fontawesome.com/plans" target="_blank">Plans</a></li>
+                <li><a href="https://fontawesome.com/support" target="_blank">Support</a></li>
+                <li><a href="https://www.podcastawesome.com/" target="_blank">Podcast</a></li>
+
+              </ul>
+            </div>
+          </div>
+      </nav>
+          <br>
+          <!-- Active Items -->
+          <h3 class="pik-text text-lightened 2 ">Active Items</h3>
+        <p>Add active class to your li tags to denote the current page.</p>
+        <nav id="navbar">
+          <div class="container">
+            <div class="nav-wrapper">
+              <i class="fa-brands fa-teamspeak"></i>
+              </a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li class="active"><a href="https://fontawesome.com/kits" target="_blank">Kits</a></li>
+                <li><a href="https://fontawesome.com/icons" target="_blank">Icons</a></li>
+                <li><a href="https://docs.fontawesome.com/" target="_blank">Docs</a></li>
+                <li><a href="https://fontawesome.com/plans" target="_blank">Plans</a></li>
+                <li><a href="https://fontawesome.com/support" target="_blank">Support</a></li>
+                <li><a href="https://www.podcastawesome.com/" target="_blank">Podcast</a></li>
+                <li><a href=""></a></li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+          <br>
+          <!-- Extended Navbar with Tabs -->
+          <h3 class="pink-text text-lightened 2 ">Extended Navbar with Tabs</h3>
+        <p>To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
+        <nav id="navbar" class="nav-extended">
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="https://fontawesome.com/" class="brand-logo" target="_blank">
+                <i class="fa-brands fa-intercom"></i>
+              </a>
+              <a href="" data-target="mobile-demo" class="sidenav-trigger"><i class="fa-solid fa-bars"></i></a>
+              
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="https://fontawesome.com/kits" target="_blank">Kits</a></li>
+                <li><a href="https://fontawesome.com/icons" target="_blank">Icons</a></li>
+                <li><a href="https://docs.fontawesome.com/" target="_blank">Docs</a></li>
+                <li><a href="https://fontawesome.com/plans" target="_blank">Plans</a></li>
+                <li><a href="https://fontawesome.com/support" target="_blank">Support</a></li>
+                <li><a href="https://www.podcastawesome.com/" target="_blank">Podcast</a></li>
+              </ul>
+            </div>
+            <div class="nav-content">
+              <ul class="tabs tabs-transparent">
+                <li class="tab"><a href="#test1">Test 1</a></li>
+                <li class="tab"><a class="active" href="#test2">Test 2</a></li>
+                <li class="tab disabled"><a href="#test3">Disabled Tab</a></li>
+                <li class="tab"><a href="#test4">Test 4</a></li>
+              </ul>
+            </div>
+            </div>
+          </nav>
+          <!-- SideNav Structure -->
+          <ul class="sidenav" id="mobile-demo">
+            <li><div class="user-view">
+              <div class="background">
+                <img src="Images/man 2.jpg">
+              </div>
+              <a href="#user"><img class="circle" src="images/man.jpg"></a>
+              <a href="#name"><span class="white-text name">David Cruz</span></a>
+              <a href="#email"><span class="white-text email">dcruzk@gmail.com</span></a>
+            </div></li>
+                <li><a href="https://fontawesome.com/kits" target="_blank">Kits</a></li>
+                <li><a href="https://fontawesome.com/icons" target="_blank">Icons</a></li>
+                <li><a href="https://docs.fontawesome.com/" target="_blank">Docs</a></li>
+                <li><a href="https://fontawesome.com/plans" target="_blank">Plans</a></li>
+                <li><a href="https://fontawesome.com/support" target="_blank">Support</a></li>
+                <li><a href="https://www.podcastawesome.com/" target="_blank">Podcast</a></li>
+          </ul>
+
+          <!-- Tabs Structure -->
+          <div class="row">
+            <div class="col s12" id="test1">
+              <div class="card">
+                <div class="card-image">
+                  <img src="Images/c1.jpeg" alt="" class="responsive-img">
+
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12" id="test2">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="Images/c2.jpeg" alt="" class="responsive-img">
+  
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12" id="test4">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="Images/c4.jpeg" alt="" class="responsive-img">
+    
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <br>
+          <!-- Fixed Navbar -->
+          <h3 class="pink-text text-lightened- 2 ">Fixed Navbar</h3>
+          <p>To make the navbar fixed, you have to add an outer wrapping div with the class navbar-fixed. This will offset your other content while making your nav fixed. You can adjust the height of this outer div to change how much offset is on your content.</p>
+          <div class="navbar-fixed">
+          <nav id="navbar">
+              <div class="nav-wrapper">
+                <i class="fa-brands fa-squarespace"></i>
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li class="active"><a href="https://fontawesome.com/kits" target="_blank">Kits</a></li>
+                  <li><a href="https://fontawesome.com/icons" target="_blank">Icons</a></li>
+                  <li><a href="https://docs.fontawesome.com/" target="_blank">Docs</a></li>
+                  <li><a href="https://fontawesome.com/plans" target="_blank">Plans</a></li>
+                  <li><a href="https://fontawesome.com/support" target="_blank">Support</a></li>
+                  <li><a href="https://www.podcastawesome.com/" target="_blank">Podcast</a></li>
+                </ul>
+              </div>
+              </div>
+            </div>
+        </nav>
+    </div>
+   
+    
+    <div style="height: 1000px"></div>
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Tabs Initialization -->
+     <script>
+      $(document).ready(function(){$('.tabs').tabs();
+     });
+     </script>
+    <!-- SideNav Initialization -->
+     <script>
+      $(document).ready(function(){$('.sidenav').sidenav({
+        edge:'right'
+      });
+      });
+     </script>
+     <!-- Dropdown Init -->
+     <script>
+      $(document).ready(function(){$('.dropdown-trigger').dropdown({
+      hover: 'true'
+      });
+      });
+     </script>
+
+</body>
+</html>
